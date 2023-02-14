@@ -4,7 +4,7 @@
       <application name="nav-bar-app"></application>
     </nav>
 
-    <main style="padding: 40px">
+    <main style="padding: 40px; overflow-y: auto; flex-grow: 1; max-height: 100vh; box-sizing: border-box">
       <route path="andrii">
         <application name="andrii-app"></application>
       </route>
@@ -15,6 +15,15 @@
 
       <route path="petro">
         <application name="petro-app"></application>
+      </route>
+
+      <route path="all">
+<!--        <div style="display: flex; flex-direction: row">-->
+<!--          <application name="andrii-app"></application>-->
+<!--          <application name="gaukhar-app"></application>-->
+<!--          <application name="petro-app"></application>-->
+<!--        </div>-->
+        <h1>Conflicts with Angular router (no exact routes exist)</h1>
       </route>
     </main>
   </div>
